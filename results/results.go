@@ -65,6 +65,6 @@ func getRecordKey(record datatypes.LtvRecord, key AggregationKey) string {
 
 func (r AggregationResult) Print() {
 	for key, value := range r {
-		fmt.Printf("%s: %f\n", key, value.revenue/float64(value.users))
+		fmt.Printf("%s: %.2f\n", key, value.revenue/float64(value.users))
 	}
 }
